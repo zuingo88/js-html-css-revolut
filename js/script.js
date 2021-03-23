@@ -40,21 +40,22 @@ function rightClick() {
     nextCircle.toggleClass('focused');
 }
 
-function dropdownShow() {
+function dropdownShowOne() {
 
-    $('.hamburger_dropdown').show();
-    console.log('ciao');
+    var hideDd = $(this).find('.dropdown');
+    hideDd.show();
+    console.log(this);
 }
 
-function dropdownHide() {
+function dropdownHideOne() {
 
-    $('.hamburger_dropdown').hide();
+    $('#dropOne').hide();
 }
 
 function init() {
 
-    $('#hamburger').mouseenter(dropdownShow);
-    $('#hamburger').click(dropdownHide);
+    $('.hamburger').mouseenter(dropdownShowOne);
+    $('#hambOne').click(dropdownHideOne);
 
 
     $('.right').click(rightClick);

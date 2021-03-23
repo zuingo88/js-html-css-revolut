@@ -48,13 +48,18 @@ header h1 {
     font-size: 50px;
 }
 
+header .blocco_hamb {
+    display: flex;
+}
+
 header .hamburger_menu {
     position: relative;
     font-size: 30px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
-header .hamburger_dropdown {
+header .dropdown {
     position: absolute;
     top: 60px;
     right: 0px;
@@ -64,17 +69,17 @@ header .hamburger_dropdown {
     display: none;
 }
 
-header .hamburger_dropdown li {
+header .dropdown li {
     list-style: none;
     padding: 5px;
     color: darkgrey;
 }
 
-header .hamburger_dropdown li:hover {
+header .dropdown li:hover {
     color: black;
 }
 
-header .hamburger_dropdown li a {
+header .dropdown li a {
     text-decoration: none;
     color: inherit;
 }
