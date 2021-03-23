@@ -41,7 +41,8 @@ function rightClick() {
 }
 
 function dropdownShow() {
-    $(this).find('.dropdown').show();
+    $('.dropdown').hide();
+    $(this).find('.dropdown').show(); 
 }
 
 function dropdownHide() {
