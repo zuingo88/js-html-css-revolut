@@ -40,23 +40,18 @@ function rightClick() {
     nextCircle.toggleClass('focused');
 }
 
-function dropdownShowOne() {
-
-    var hideDd = $(this).find('.dropdown');
-    hideDd.show();
-    console.log(this);
+function dropdownShow() {
+    $(this).find('.dropdown').show();
 }
 
-function dropdownHideOne() {
-
-    $('#dropOne').hide();
+function dropdownHide() {
+    $(this).find('.dropdown').hide();
 }
 
 function init() {
 
-    $('.hamburger').mouseenter(dropdownShowOne);
-    $('#hambOne').click(dropdownHideOne);
-
+    $('.hamburger_menu').mouseenter(dropdownShow);
+    $('.hamburger_menu').click(dropdownHide);
 
     $('.right').click(rightClick);
     $('.left').click(leftClick);
